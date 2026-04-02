@@ -5,7 +5,7 @@ pipeline {
         stage('Build and Publish') {
             steps {
                 withCredentials([usernamePassword(
-                    credentialsId: 'github-packages-maven',
+                    credentialsId: 'nezbit-decor-github-classic',
                     usernameVariable: 'GITHUB_USER',
                     passwordVariable: 'GITHUB_TOKEN'
                 )]) {
